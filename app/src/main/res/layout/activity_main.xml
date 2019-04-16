@@ -27,7 +27,34 @@
     <Button
         android:id="@+id/insert"
         android:layout_width="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/usernumber_et"
+        android:layout_height="wrap_content"
         android:text="Insert"
-        android:layout_height="wrap_content" />
+        app:layout_constraintTop_toBottomOf="@id/usernumber_et" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintLeft_toRightOf="@id/insert"
+        app:layout_constraintTop_toBottomOf="@id/usernumber_et"
+         />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintLeft_toRightOf="@id/delete"
+        app:layout_constraintTop_toBottomOf="@id/usernumber_et"
+        />
+
+    <Button
+        android:id="@+id/query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Query"
+        app:layout_constraintLeft_toRightOf="@id/update"
+        app:layout_constraintTop_toBottomOf="@id/usernumber_et"
+        />
 </android.support.constraint.ConstraintLayout>
