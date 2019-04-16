@@ -29,6 +29,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Insert"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/delete"
         app:layout_constraintTop_toBottomOf="@id/usernumber_et" />
 
     <Button
@@ -36,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
+        app:layout_constraintRight_toLeftOf="@id/update"
         app:layout_constraintLeft_toRightOf="@id/insert"
         app:layout_constraintTop_toBottomOf="@id/usernumber_et"
          />
@@ -45,6 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Update"
+        app:layout_constraintRight_toLeftOf="@id/query"
         app:layout_constraintLeft_toRightOf="@id/delete"
         app:layout_constraintTop_toBottomOf="@id/usernumber_et"
         />
@@ -56,5 +61,6 @@
         android:text="Query"
         app:layout_constraintLeft_toRightOf="@id/update"
         app:layout_constraintTop_toBottomOf="@id/usernumber_et"
+        app:layout_constraintRight_toRightOf="parent"
         />
 </android.support.constraint.ConstraintLayout>
